@@ -1,7 +1,7 @@
 import { X } from "lucide-react";
 
 export default function MobileMenu({ open, onClose, navLinks }) {
-  if (!open) return null;
+  if (!open) return null; 
   return (
     <motion.div
       initial={{ opacity: 0, y: -8 }}
