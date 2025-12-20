@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { X } from "lucide-react";
 
 export default function MobileMenu({ open, onClose, navLinks }) {
