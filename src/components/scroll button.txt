@@ -1,0 +1,40 @@
+ <div className="mt-6 flex items-center justify-center">
+          <button
+            onClick={onScrollToJourney}
+            aria-label="Scroll to client journey"
+            className="group flex flex-col items-center gap-2 -mb-2 focus:outline-none"
+          >
+            <motion.svg
+              initial={{ y: 0, opacity: 0.9 }}
+              animate={{ y: [0, 8, 0] }}
+              transition={{
+                duration: 1.8,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+              className="w-7 h-7"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 5v12"
+                stroke="#60A5FA"
+                strokeWidth="1.6"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M18 13l-6 6-6-6"
+                stroke="#0B5FFF"
+                strokeWidth="1.6"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </motion.svg>
+
+            <span className="text-xs text-slate-300 tracking-wide opacity-90 group-focus:underline">
+              Scroll to explore
+            </span>
+          </button>
+        </div>

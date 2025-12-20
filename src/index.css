@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+/* Section sizing to emulate Superlist — each section occupies a viewport (90vh)
+   with the hero & contact intentionally larger (110vh) to hint at more content. */
+main > section { 
+  min-height: 90vh; 
+  display: flex; 
+  align-items: center; 
+  padding-top: 3rem; 
+  padding-bottom: 3rem; 
+  flex-direction: column; /* ensure vertical flow inside sections */
+}
+main > section:first-of-type { min-height: 90vh; } /* hero */
+main > section#contact { min-height: 90vh; } /* contact form larger for approachability */
+
+/* Mobile fallback: avoid forcing full-screen on small devices */
+@media (max-width: 768px) {
+  main > section { min-height: auto; padding-top: 2rem; padding-bottom: 2rem; }
+  main > section:first-of-type,
+  main > section#contact { min-height: 80vh; }
+}
