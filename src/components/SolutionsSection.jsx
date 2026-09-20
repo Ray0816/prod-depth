@@ -7,7 +7,7 @@ import { Briefcase, PenTool, Code, Megaphone } from "lucide-react";
 
 export default function SolutionsSection({ onPrimaryCTAClick = () => {} }) {
   return (
-    <section aria-labelledby="solutions-heading" className="py-0 bg-none w-full">
+    <section aria-labelledby="solutions-heading" id="solutions" className="py-0 bg-none w-full">
       <div className="max-w-8xl mx-auto px-6 lg:px-8 ">
         <div className="text-center max-w-3xl mx-auto">
           <h2

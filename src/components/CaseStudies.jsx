@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { caseImages } from "../constants";
 
 export default function InsightsCards() {
@@ -25,7 +26,7 @@ export default function InsightsCards() {
   ];
 
   return (
-    <section id="why-now" className="mt-6 w-full pt-0">
+    <section id="services" className="mt-6 w-full pt-0">
       <div className="w-full px-0">
         <h3 className="text-2xl font-bold text-left px-4">
           {/* Why it matters now */}
@@ -69,7 +70,7 @@ export default function InsightsCards() {
                 <p className="text-sm text-slate-300">{item.snippet}</p>
 
                 <button className="px-4 py-2 bg-white/10 text-white text-xs rounded-md border border-white/20 hover:bg-white/20 transition w-fit self-end">
-                  Read more
+                  <Link to="/about">Read more</Link>
                 </button>
               </div>
             </article>

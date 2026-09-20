@@ -39,8 +39,8 @@ export default function LandingPage() {
         />
         <CaseStudies />
         <SolutionsSection />
-        {/* <Journey /> */}
-        {/* <section className="mt-8  ">
+        <Journey />
+        <section className="mt-8  ">
           <div className="overflow-hidden glass-surface border border-white/10 shadow-2xl">
             <div className="w-full h-64 sm:h-80 md:h-96 relative">
               <img
@@ -51,9 +51,9 @@ export default function LandingPage() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
             </div>
           </div>
-        </section> */}
+        </section>
 
-        {/* <Approach /> */}
+        <Approach />
 
         <ContactForm />
         <Footer />
